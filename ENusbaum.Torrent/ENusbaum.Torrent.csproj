@@ -14,7 +14,7 @@
 
 		<!-- NuGet settings -->
 		<PackageId>ENusbaum.Torrent</PackageId>
-		<PackageVersion>1.0.0</PackageVersion>
+		<PackageVersion>1.0.1</PackageVersion>
 		<PackageTags>torrent bittorrent</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/enusbaum/ENusbaum.Torrent</PackageProjectUrl>
