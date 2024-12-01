@@ -15,12 +15,12 @@ You have two options within `ENusbaum.Torrent` to create a .torrent file. You ca
 
 ### Create a .torrent file as a ReadOnlySpan<byte>
 ```csharp
-	public ReadOnlySpan<byte> Create(string inputPath, string torrentName, string trackerAnnounceUrl, PieceSize pieceSize = PieceSize.Auto)
+public ReadOnlySpan<byte> Create(string inputPath, string torrentName, string trackerAnnounceUrl, PieceSize pieceSize = PieceSize.Auto)
 ```
 
 ### Write the .torrent file to disk
 ```csharp
-	public bool CreateFile(string inputPath, string torrentName, string trackerAnnounceUrl, string outputFile, PieceSize pieceSize = PieceSize.Auto)
+public bool CreateFile(string inputPath, string torrentName, string trackerAnnounceUrl, string outputFile, PieceSize pieceSize = PieceSize.Auto)
 ```
 
 The default Piece Size of `Auto` will automatically determine the best piece size based on the size of the file being used to create the .torrent file with the optimal 2000 pieces. While there is some debate on the number
