@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+
+		<Authors>Eric Nusbaum</Authors>
+		<Company>Nusbaum Consulting, LLC</Company>
+		<Copyright>Copyright ©2024 Nusbaum Consulting, LLC All rights reserved.</Copyright>
+
+		<Description>A simple NuGet Package for easily creating .torrent files locally</Description>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+		<!-- NuGet settings -->
+		<PackageId>ENusbaum.Torrent</PackageId>
+		<PackageVersion>1.0.0</PackageVersion>
+		<PackageTags>torrent bittorrent</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/enusbaum/ENusbaum.Torrent</PackageProjectUrl>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageReadmeFile>nuget.md</PackageReadmeFile>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/enusbaum/ENusbaum.Torrent</RepositoryUrl>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BencodeNET" Version="5.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="icon.png" Pack="true" PackagePath="\" />
+		<None Include="nuget.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+</Project>
