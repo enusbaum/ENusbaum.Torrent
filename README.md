@@ -23,6 +23,8 @@ public ReadOnlySpan<byte> Create(string inputPath, string torrentName, string tr
 public bool CreateFile(string inputPath, string torrentName, string trackerAnnounceUrl, string outputFile, PieceSize pieceSize = PieceSize.Auto)
 ```
 
+By default, all files in all subfolders of the specified `inputPath` will be included in the .torrent file created.
+
 The default Piece Size of `Auto` will automatically determine the best piece size based on the size of the file being used to create the .torrent file with the optimal 2000 pieces. While there is some debate on the number
 of pieces to use, 2000 is a good balance between the number of pieces and the size of the pieces.
 
